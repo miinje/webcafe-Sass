@@ -1,1 +1,5 @@
-// mixin.scss
+@mixin posCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

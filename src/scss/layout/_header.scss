@@ -28,7 +28,7 @@
   }
 
   @include desktop {
-    position: absolute;
+    @include posCenter;
   }
 }
 
