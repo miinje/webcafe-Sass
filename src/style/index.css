@@ -378,8 +378,7 @@ legend {
   border: 0;
   border-radius: 5px;
   background: transparent;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
   font-size: 0.875rem;
 }
 .button--fill {
@@ -392,22 +391,25 @@ legend {
 }
 
 .appHeader {
-  background: yellow;
   padding: 1rem 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
 }
 @media (max-width: 767px) {
   .appHeader {
     background: #38302e;
     color: #ffffff;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
   }
 }
 @media (min-width: 768px) {
   .appHeader {
     position: relative;
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -429,7 +431,6 @@ legend {
 }
 
 .memberOnly {
-  background: green;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -442,7 +443,6 @@ legend {
 }
 
 .searchForm__group {
-  background: blue;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -456,7 +456,7 @@ legend {
 }
 @media (min-width: 768px) {
   .searchForm__group .formInput {
-    width: 28.75rem;
+    width: 25rem;
   }
 }
 

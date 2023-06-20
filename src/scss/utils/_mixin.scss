@@ -6,7 +6,17 @@
   transform: translateY(-50%);
 }
 
+
+@mixin containerMax($max-width: 1024px) {
+  max-width: rem($max-width);
+  @include autoMargin;
+}
+
 @mixin paddingX($spacing) {
-  padding-left: rem($spacing);
-  padding-right: rem($spacing);
+  padding: rem($spacing);
+}
+
+@mixin autoMargin {
+  margin-left: auto;
+  margin-right: auto;
 }
