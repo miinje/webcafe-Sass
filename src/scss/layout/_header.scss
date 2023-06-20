@@ -7,6 +7,8 @@
   @include mobile {
     background: $dark-brown;
     color: $white;
+
+    @include flexbox(column);
   }
 }
 
@@ -26,4 +28,13 @@
 .memberOnly {
   background: green;
   @include flexbox($justify: flex-end);
+
+  @include mobile {
+    order: -1;
+  }
+}
+
+//검색 폼
+.searchForm {
+
 }
