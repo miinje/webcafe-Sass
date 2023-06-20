@@ -378,7 +378,8 @@ legend {
   border: 0;
   border-radius: 5px;
   background: transparent;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 0.875rem;
 }
 .button--fill {
@@ -390,8 +391,15 @@ legend {
   border: 1px solid currentColor;
 }
 
+@media (min-width: 768px) {
+  .button--burger {
+    display: none;
+  }
+}
+
 .appHeader {
-  padding: 1rem 1.5rem;
+  background: yellow;
+  padding: 1rem 1.25rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -420,7 +428,7 @@ legend {
 .logo__link {
   display: block;
   height: 100%;
-  background: url(/assets/images/webcafe-logo.png) no-repeat;
+  background: url(/assets/images/webcafe-logo.png);
 }
 @media (min-width: 768px) {
   .logo {
@@ -443,11 +451,12 @@ legend {
 }
 
 .searchForm__group {
+  /* background: blue; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: stretch;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 @media (max-width: 767px) {
   .searchForm__group .formInput {

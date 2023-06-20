@@ -2,7 +2,8 @@
 @use "./../components" as *;
 
 .appHeader {
-  padding: rem(16px) rem(24px);
+  background: yellow;
+  padding: rem(16px) rem(20px);
   @include flexbox(column);
   gap: rem(16px);
 
@@ -21,11 +22,10 @@
 .logo {
   width: rem(204px);
   height: rem(60px);
-  
   &__link {
     display: block;
     height: 100%;
-    background: url(/assets/images/webcafe-logo.png) no-repeat;
+    background: url(/assets/images/webcafe-logo.png);
   }
 
   @include desktop {
@@ -42,13 +42,13 @@
   }
 }
 
-//검색 폼
+// 검색 폼
 .searchForm {
   &__group {
-    // background: blue;
+    /* background: blue; */
     @include flexbox($justify: flex-end);
-    gap: rem(8px);
-    
+    gap: rem(16px);
+
     @include mobile {
       .formInput {
         flex-grow: 1;
@@ -61,4 +61,4 @@
       }
     }
   }
-  }
+}
