@@ -1,1 +1,29 @@
-// header.scss
+@use "./../utils" as *;
+
+.appHeader {
+  background: yellow;
+  padding: rem(16px) rem(24px);
+
+  @include mobile {
+    background: $dark-brown;
+    color: $white;
+  }
+}
+
+// 로고
+.logo {
+  width: rem(204px);
+  height: rem(60px);
+  
+  &__link {
+    display: block;
+    height: 100%;
+    background: url(/assets/images/webcafe-logo.png) no-repeat;
+  }
+}
+
+// 멤버 서비스
+.memberOnly {
+  background: green;
+  @include flexbox($justify: flex-end);
+}
