@@ -10,6 +10,10 @@
 
     @include flexbox(column);
   }
+
+  @include desktop {
+    position: relative;
+  }
 }
 
 // 로고
@@ -21,6 +25,10 @@
     display: block;
     height: 100%;
     background: url(/assets/images/webcafe-logo.png) no-repeat;
+  }
+
+  @include desktop {
+    position: absolute;
   }
 }
 
@@ -36,5 +44,8 @@
 
 //검색 폼
 .searchForm {
-
+  &__group {
+    background: blue;
+    text-align: right;
+  }
 }
