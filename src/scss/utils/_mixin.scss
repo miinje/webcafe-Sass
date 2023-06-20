@@ -1,19 +1,78 @@
-@use "unit" as *;
+@use "./../utils/unit" as *;
 
-@mixin posCenter {
-  position: absolute;
+@mixin pos {
+  top: $top;
+  left: $left;
+}
+
+@mixin posLeftTop($left: 0, $top: 0) {
+  @include pos;
+  top: $top;
+  left: $left;
+}
+
+@mixin posLeftTop($right: 0, $top: 0) {
+  @include pos;
+  top: $top;
+  right: $left;
+}
+
+@mixin posCenterX {
+  @include pos;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin posCenterY {
+  @include pos;
   top: 50%;
   transform: translateY(-50%);
 }
 
+@mixin posCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 @mixin containerMax($max-width: 1024px) {
   max-width: rem($max-width);
   @include autoMargin;
 }
 
+@mixin padding($spacing) {
+  @include paddingX;
+  @include paddingY;
+}
+
 @mixin paddingX($spacing) {
+  padding-left: rem($spacing);
+  padding-right: rem($spacing);
+}
+
+@mixin paddingY($spacing) {
+  padding-top: rem($spacing);
+  padding-bottom: rem($spacing);
+}
+
+@mixin padding($spacing) {
   padding: rem($spacing);
+}
+
+@mixin marginX($spacing) {
+  margin-left: rem($spacing);
+  margin-right: rem($spacing);
+}
+
+@mixin marginY($spacing) {
+  margin-top: rem($spacing);
+  margin-bottom: rem($spacing);
+}
+
+@mixin margin($spacing) {
+  @include marginX;
+  @include marginY;
 }
 
 @mixin autoMargin {

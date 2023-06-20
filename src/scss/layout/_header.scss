@@ -29,7 +29,7 @@
   }
 
   @include desktop {
-    @include posCenter;
+    @include posCenterY;
   }
 }
 
