@@ -654,6 +654,18 @@ legend {
   margin-right: auto;
   text-align: center;
 }
+.book__info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 0.5rem;
+}
+.ratingStar {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
 .iframeWrapper {
   aspect-ratio: 1.7777777778;

@@ -50,12 +50,21 @@
 // 추천 서적
 .book {
   &__cover {
-    // background: powderblue;
     width: 70%;
     @include autoMargin;
     text-align: center;
   }
-
+  
+  &__info {
+    @include flexbox($wrap: wrap, $justify: center);
+    column-gap: rem(8px);
+  }
+  
+  @at-root .ratingStar {
+    width: 100%;
+    text-align: center;
+    font-size: rem(24px);
+  }
 }
 
 // 새소식
