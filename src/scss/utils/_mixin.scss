@@ -105,3 +105,9 @@
 @mixin ratio($w, $h){
   aspect-ratio: $w / $h;
 }
+
+// 반응형 콘텐츠
+@mixin respons($width: max-width, $height: auto) {
+  #{$width}: 100%;
+  height: $height;
+}
