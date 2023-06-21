@@ -392,6 +392,16 @@ legend {
   background-image: url(./../assets/images/sprite_main.png);
   background-repeat: no-repeat;
   padding-left: 4rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.sprite [class*=enTitle] {
+  font-size: 1rem;
+  font-weight: 400;
 }
 .spriteBook {
   background-position: 0 0;
@@ -637,6 +647,9 @@ legend {
   .twitter {
     grid-area: twitter;
   }
+}
+.iframeWrapper {
+  aspect-ratio: 1.7777777778;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -100,3 +100,8 @@
   grid-column-gap: rem($column-gap);
   grid-row-gap: rem($row-gap);
 }
+
+// ratio 믹스인
+@mixin ratio($w, $h){
+  aspect-ratio: $w / $h;
+}
