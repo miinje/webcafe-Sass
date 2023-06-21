@@ -1,1 +1,22 @@
-// navigation.scss
+@use "./../utils" as *;
+
+
+// 메인 내비게이션
+.menu {
+  background: lavender;
+
+  @include desktop {
+    background: $brown;
+    color: $white;
+
+    &__list {
+      @include flexbox($justify: space-between);
+      max-width: 1024px;
+      @include autoMargin;
+    }
+
+    &__item {
+      @include padding(32px);
+    }
+  }
+}
