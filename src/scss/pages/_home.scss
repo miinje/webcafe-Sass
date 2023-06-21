@@ -76,7 +76,27 @@
 
 // 게시판
 .board {
+  position: relative;
 
+  &__item {
+    margin: 20px 0;
+    @include flexbox;
+    column-gap: rem(8px);
+  }
+
+  &__link {
+    flex-grow: 1;
+    @include textOver;
+  }
+
+  &__date {
+    // flex-basis: 
+    white-space: nowrap;
+  }
+
+  &__more {
+    position: absolute;
+  }
 }
 
 // 인기 사이트

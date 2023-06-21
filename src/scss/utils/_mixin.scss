@@ -111,3 +111,10 @@
   #{$width}: 100%;
   height: $height;
 }
+
+// 텍스트 오버플로우
+@mixin textOver {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -671,4 +671,28 @@ legend {
   aspect-ratio: 1.7777777778;
 }
 
+.board {
+  position: relative;
+}
+.board__item {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  column-gap: 0.5rem;
+}
+.board__link {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board__date {
+  white-space: nowrap;
+}
+.board__more {
+  position: absolute;
+}
+
 /*# sourceMappingURL=index.css.map */
