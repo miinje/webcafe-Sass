@@ -54,10 +54,6 @@
     width: 70%;
     @include autoMargin;
     text-align: center;
-    
-    &Image {
-      @include respons;
-    }
   }
 
 }
@@ -66,10 +62,6 @@
 .news {
   @at-root .iframeWrapper {
     @include ratio(16, 9);
-  }
-
-  iframe {
-    @include respons(width, 100%);
   }
 }
 

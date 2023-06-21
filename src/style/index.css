@@ -340,6 +340,11 @@ body {
 }
 
 /* 유연한 미디어 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 video {
   width: 100%;
   height: auto;
@@ -649,18 +654,9 @@ legend {
   margin-right: auto;
   text-align: center;
 }
-.book__coverImage {
-  max-width: 100%;
-  height: auto;
-}
 
 .iframeWrapper {
   aspect-ratio: 1.7777777778;
-}
-
-.news iframe {
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
