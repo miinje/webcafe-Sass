@@ -23,7 +23,7 @@
   @include mobile {
     width: rem(36px);
     height: rem(36px);
-    background: blue;
+    background: transparent;
     border: 0;
     padding: 0;
     @include pos;
