@@ -693,6 +693,8 @@ legend {
 }
 .board__more {
   position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

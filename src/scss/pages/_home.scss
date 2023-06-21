@@ -95,7 +95,9 @@
   }
 
   &__more {
-    position: absolute;
+    @include pos;
+    right: 0;
+    top: 0;
   }
 }
 
