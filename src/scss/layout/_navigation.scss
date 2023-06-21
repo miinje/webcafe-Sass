@@ -4,14 +4,19 @@
 // 메인 내비게이션
 .menu {
   @include mobile {
+    @at-root .is--ative .menu__list {
+      transform: none;
+    }
+    
     &__list {
       background: $accent-opacity-color;
+      @include padding(20px);
       width: 70vw;
       height: 100vh;
       position: fixed;
       left: 0;
       top: 0;
-      @include padding(20px);
+      transform: translateX(-150%);
     }
 
     &__item {
