@@ -552,7 +552,6 @@ legend {
 
 .appMain {
   background: yellow;
-  display: grid;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1rem;
@@ -560,9 +559,11 @@ legend {
 }
 @media (max-width: 767px) {
   .appMain {
-    grid-template-columns: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: auto;
-    row-gap: 16px;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
   }
 }
 @media (min-width: 768px) {
@@ -570,10 +571,11 @@ legend {
     max-width: 64rem;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    row-gap: 16px;
-    column-gap: 20px;
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1rem;
     grid-template-areas: "news news news news news news news news news news news news" "book book book book twitter twitter twitter twitter twitter favorite favorite favorite" "book book book book . board board board board board board board";
   }
 }

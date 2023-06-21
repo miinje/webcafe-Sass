@@ -2,22 +2,16 @@
 
 .appMain {
   background: yellow;
-  display: grid;
   @include paddingX(20px);
   @include paddingY(16px);
 
   @include mobile {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    row-gap: 16px;
+    @include gridbox(1, 100%, 16px);
   }
 
   @include desktop {
     @include containerMax;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    row-gap: 16px;
-    column-gap: 20px;
+    @include gridbox(12, 1fr, 16px, 20px);
     grid-template-areas:
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
@@ -25,6 +19,7 @@
   }
 }
 
+// 메인 콘텐츠 (데스크탑에만 적용)
 @include desktop {
   // 추천 서적
   .book {
