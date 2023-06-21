@@ -48,7 +48,17 @@
 
 
 // 추천 서적
-.books {
+.book {
+  &__cover {
+    background: powderblue;
+    width: 70%;
+    @include autoMargin;
+    text-align: center;
+    
+    &Image {
+      @include respons;
+    }
+  }
 
 }
 
