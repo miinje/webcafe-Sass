@@ -13,4 +13,8 @@ $rootUnit: 16px !default;
   $removeValue: removeUnit($value);
   $removeBase: removeUnit($base);
   @return math.div($removeValue, $removeBase) * 1rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> content
