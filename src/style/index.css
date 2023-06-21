@@ -399,7 +399,7 @@ legend {
   .button--burger {
     width: 2.25rem;
     height: 2.25rem;
-    background: blue;
+    background: transparent;
     border: 0;
     padding: 0;
     position: absolute;
@@ -548,6 +548,52 @@ legend {
 .menu__link {
   display: block;
   padding: 1rem;
+}
+
+.appMain {
+  background: yellow;
+  display: grid;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .appMain {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .appMain {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    row-gap: 16px;
+    column-gap: 20px;
+    grid-template-areas: "news news news news news news news news news news news news" "book book book book twitter twitter twitter twitter twitter favorite favorite favorite" "book book book book . board board board board board board board";
+  }
+}
+
+@media (min-width: 768px) {
+  .book {
+    grid-area: book;
+  }
+  .news {
+    grid-area: news;
+  }
+  .board {
+    grid-area: board;
+  }
+  .favorite {
+    grid-area: favorite;
+  }
+  .twitter {
+    grid-area: twitter;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

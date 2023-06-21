@@ -15,7 +15,7 @@
 @mixin posRightTop($r: 0, $t: 0) {
   @include pos;
   top: $t;
-  right: $l;
+  right: $r;
 }
 
 @mixin posCenterX {
