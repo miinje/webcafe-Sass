@@ -65,7 +65,11 @@
 // 새소식
 .news {
   @at-root .iframeWrapper {
-    @include ratio(16,9);
+    @include ratio(16, 9);
+  }
+
+  iframe {
+    @include respons(width, 100%);
   }
 }
 
