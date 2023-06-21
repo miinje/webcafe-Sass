@@ -2,7 +2,7 @@
 @use "./../components" as *;
 
 .appHeader {
-  background: yellow;
+  // background: yellow;
   padding: rem(16px) rem(20px);
   @include flexbox(column);
   gap: rem(16px);

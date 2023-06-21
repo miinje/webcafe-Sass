@@ -432,7 +432,6 @@ legend {
 }
 
 .appHeader {
-  background: yellow;
   padding: 1rem 1.25rem;
   display: flex;
   flex-flow: column nowrap;
@@ -503,26 +502,44 @@ legend {
   }
 }
 
-.menu {
-  background: lavender;
+@media (max-width: 767px) {
+  .menu__list {
+    background: rgba(240, 230, 140, 0.85);
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1.25rem;
+  }
+  .menu__item {
+    border-bottom: 1px solid #101010;
+  }
 }
 @media (min-width: 768px) {
   .menu {
     background: #988574;
-    color: #ffffff;
   }
   .menu__list {
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 700;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .menu__item {
-    padding: 2rem;
-  }
+}
+.menu__link {
+  display: block;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

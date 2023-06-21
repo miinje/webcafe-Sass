@@ -3,20 +3,38 @@
 
 // 메인 내비게이션
 .menu {
-  background: lavender;
-
-  @include desktop {
-    background: $brown;
-    color: $white;
-
+  @include mobile {
     &__list {
-      @include flexbox($justify: space-between);
-      max-width: 1024px;
-      @include autoMargin;
+      background: $accent-opacity-color;
+      width: 70vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      @include padding(20px);
     }
 
     &__item {
-      @include padding(32px);
+      border-bottom: 1px solid $black;
     }
+  }
+
+  @include desktop {
+    background: $brown;
+    
+    &__list {
+      @include containerMax;
+      @include paddingX(4px);
+      @include paddingY(16px);
+      color: $white;
+      font-size: rem(18px);
+      font-weight: 700;
+      @include flexbox($justify: space-between);
+    }
+  }
+
+  &__link {
+    display: block;
+    @include padding(16px);
   }
 }
