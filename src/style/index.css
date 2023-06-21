@@ -367,6 +367,48 @@ legend {
   margin: -1px;
 }
 
+.themeGreen {
+  color: #abd375;
+}
+
+.themeYellow {
+  color: #e8ca58;
+}
+
+.themeBrown {
+  color: #988574;
+}
+
+.themeOrange {
+  color: #eea60a;
+}
+
+.themeBlue {
+  color: #6aaee6;
+}
+
+.sprite {
+  min-height: 3.75rem;
+  background-image: url(./../assets/images/sprite_main.png);
+  background-repeat: no-repeat;
+  padding-left: 4rem;
+}
+.spriteBook {
+  background-position: 0 0;
+}
+.spriteBoard {
+  background-position: 0 -115px;
+}
+.spriteNews {
+  background-position: 0 -230px;
+}
+.spriteFavorite {
+  background-position: 0 -345px;
+}
+.spriteTwitter {
+  background-position: 0 -460px;
+}
+
 .formInput__input {
   appearance: none;
   display: block;
@@ -551,7 +593,6 @@ legend {
 }
 
 .appMain {
-  background: yellow;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1rem;
